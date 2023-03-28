@@ -1,0 +1,373 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{   
+    max-width: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("/fondo.jpg");
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav li{
+    display: inline-block;
+}
+nav a{
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solit transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.menuhover,a:hover{
+    border: 1px solid black;
+    transition: .5s;
+}
+/* Banner */
+.banner{
+    position: relative;
+    widows: 100%;
+    height: calc(108vh - 50px);
+    background-image: url(/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+}
+
+.contenido{
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.contenido h1{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.contenido p{
+    margin: 20px;
+    font-size: 18px;
+}
+
+.contenido .button{
+    text-decoration: none;
+    color: white;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    transition: all .3s ease-in-out;
+    width: 150px;
+}
+
+.contenido .button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+/* Fin banner */
+
+.icon-carrito {
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-carrito:hover{
+    cursor: pointer;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0 30px 0;
+}
+
+header img{
+    width: 45px;
+    height: 45px;
+}
+
+header p{
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 10px;
+    margin: 10px;
+}
+
+/* Burbuja de lista */
+.contador-producto{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+#contador{
+    font-size: 12px;
+}
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+/* Fin burbuja */ 
+
+/* Contador carrito */
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-producto{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.container-icon{
+    position: relative;
+}
+
+.hidden-cart{
+    display: none;
+}
+/* Fin carrito */
+
+/* Producto */
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.20)
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .4s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+}
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+/* Fin producto */
+
+/* carrousel */
+.carrousel{
+    width: 100%;
+    position: relative;
+    height: 1000px;
+}
+
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255.,255255,.6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+
+.adelante{
+    right: 2%;
+    top: calc(50% - 70px);
+}
+/* PIE DE PAGINA */
+.pie-pagina{
+    width: 100%;
+    background-color: #333;
+}
+
+.pie-pagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .grupo1 .box figure{
+    width: 50%;
+    height: 50%;
+    display: flex;
+
+}
+.pie-pagina .grupo1 .box figure img{ 
+    width: 250px;
+}
+
+.pie-pagina .grupo1 .contenido .red-social img{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.pie-pagina .grupo2{
+    background-color: #5f6366;
+    padding: 15px 10px;
+    text-align: center;
+    color: aliceblue;
+}
+

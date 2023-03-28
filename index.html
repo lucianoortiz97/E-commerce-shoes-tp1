@@ -1,84 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>El Rincon del Friki</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda LOP</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
     <header>
-      <nav class="navbar-container" id="home">
-        <img class="navbar-img" src="./imagenes/logo.png"/>
-        <div class="navbar-links">
-        <a class="menu" href="#home">Home</a>
-        <a class="menu" href="#news">Noticas</a>
-        <a class="menu" href="#footer-container">Sobre Nosotros</a>
-      </div>
-      </nav>
+        <img src="/logo.png" alt="Logo LOP">
+
+        <p> ¡Suscribete para estar pendiente de promociones!</p>
+
+        <div class="container-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-carrito">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+
+            <div class="contador-producto">
+                <span id="contador">1</span>
+            </div>
+            
+            <div class="container-cart-products hidden-cart">
+                <div class="cart-product">
+                    <div class="info-cart-producto">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Zapatilla Nike</p>
+                        <span class="precio-producto-carrito">$20.000</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </div>
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+            </div>
+        </div>
     </header>
-    <div class="frente">
-      <h1>El Rincon del Friki</h1>
-      <h2>Todas las tecno noticias para Argentina Programa</h2>
-      <div class="divTarjetas">
-        <a href="./card1.html">
-          <div class="tarjeta">
-            <div class="divImg"></div>
-            <div class="divTexto">
-              <h3>Videojuegos que harán parte de los Juegos Olímpicos de esports</h3>
-              <p>
-                Por fuera de la lista están títulos reconocidos como FIFA o League of Legends
-              </p>
+    <nav> 
+        <ul>
+            <li><a class="menuhover" href="#">Inicio</a></li>
+            <li><a href="#">Hombre</a></li>
+            <li><a href="#">Mujer</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="capa">
+            <div class="contenido">
+                <h1>Tienda LOP - Tus mejores zapatillas en un solo lugar.</h1>
+                <p>Proyecto final modelo zapateria online presentado por Luciano Ortiz</p>
+                <center><a href="#" class="button">Leer Mas</a></center>
             </div>
-          </div>
-        </a>
-        <a href="./card2.html">
-          <div class="tarjeta">
-            <div class="divImg"></div>
-            <div class="divTexto">
-              <h3>League of Legends: cuál es el campeón más odiado y el más querido</h3>
-              <p>
-                El videojuego cuenta con 162 personajes
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="./card3.html">
-          <div class="tarjeta">
-            <div class="divImg"></div>
-            <div class="divTexto">
-              <h3>Qué es Java y por qué es necesario en la programación</h3>
-              <p>
-                Los lenguajes de programación se pueden usar para crear páginas web o sistemas para computadores
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="./card4.html">
-          <div class="tarjeta">
-            <div class="divImg"></div>
-            <div class="divTexto">
-              <h3>Instagram cambiará la manera de ver Historias</h3>
-              <p>
-                Se implementarán unas burbujas que salen automáticamente
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="./card5.html">
-          <div class="tarjeta">
-            <div class="divImg"></div>
-            <div class="divTexto">
-              <h3>The Last of Us: qué pasará con la serie y el videojuego</h3>
-              <p>
-                El último capitulo de la serie tuvo 8,2 millones de espectadores, un récord para HBO Max
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
+        </div>
     </div>
-  </body>
-  <footer class="footer">Todos los derechos reservados a la practica</footer>
+    <div class="container-items"> 
+        <div class="item">
+            <figure>
+                <img src="/zapatillas/nike deportiva.jpg" alt="producto" >  </figure>
+                <div class="info-producto">
+                    <h2>NIKE DEPORTIVA</h2>
+                    <p class="precio">$33.000</p>
+                    <button>Añadir a carrito</button>
+                </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/zapatillas/air force1.jpg" alt="producto" >  </figure>
+                <div class="info-producto">
+                    <h2>AIR FORCE 1</h2>
+                    <p class="precio">$51.000</p>
+                    <button>Añadir a carrito</button>
+                </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/zapatillas/basket.jpg" alt="producto" >  </figure>
+                <div class="info-producto">
+                    <h2>AIR JORDAN 5</h2>
+                    <p class="precio">$64.000</p>
+                    <button>Añadir a carrito</button>
+                </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/zapatillas/caña alta.jpg" alt="producto" >  </figure>
+                <div class="info-producto">
+                    <h2>NIKE DUNG HIGH</h2>
+                    <p class="precio">$55.000</p>
+                    <button>Añadir a carrito</button>
+                </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/zapatillas/nike running.jpg" alt="producto" >  </figure>
+                <div class="info-producto">
+                    <h2>NIKE REVOLUTION</h2>
+                    <p class="precio">$27.000</p>
+                    <button>Añadir a carrito</button>
+                </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="/zapatillas/air max retro 23.jpg" alt="producto" >  </figure>
+                <div class="info-producto">
+                    <h2>AIR MAX RETRO 23</h2>
+                    <p class="precio">$41.000</p>
+                    <button>Añadir a carrito</button>
+                </div>
+        </div>
+    </div>
+    <div class="carrousel">
+        <div class="atras botones">
+            &#60
+        </div>
+
+        <div class="adelante botones">
+            &#62
+        </div>
+        <img src="carrousel/frase.jpg" alt=""   id="imagen">
+    </div>
+    <footer class="pie-pagina">
+        <div class="grupo1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="/logo.png" alt="Logo LOP">
+                    </a>
+                </figure>
+            </div>
+            <div class="contenido">
+                <h2>INFORMACION</h2>
+                <p>Trabajo final en base a modelo de una zapateria online.</p>
+            </div>
+            <div class="contenido">
+                 <h2>Redes sociales</h2>
+                 <div class="red-social">
+                    <img src="/redes/facebook.png">
+                    <img src="/redes/instagram.png">
+                    <img src="/redes/whatsapp.png">
+                     
+                    </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Tienda LOP</b> - Trabajo final realizado para Argentina Programa</small>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
 </html>
