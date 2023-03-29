@@ -84,6 +84,10 @@ a.menuhover,a:hover{
     font-size: 18px;
 }
 
+.contenido h6{
+    margin: 100px;
+}
+
 .contenido .button{
     text-decoration: none;
     color: white;
@@ -274,6 +278,31 @@ header p{
     flex-direction: column;
     gap: 10px;
 }
+
+.item .oferta{
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.item .sin-stock{
+    background-color: #ccc;
+    color: #666;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+
+.item .sin-stock{
+    background-color: #ccc;
+}
+
 
 .precio{
     font-size: 18px;
